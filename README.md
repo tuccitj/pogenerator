@@ -1,5 +1,5 @@
 # pogenerator
-## Deployment and Removal
+## Deployment and Removal Using Docker
 1.) Build Container Image
 
     docker build -t pogenerator:latest .
