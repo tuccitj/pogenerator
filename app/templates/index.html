@@ -1,0 +1,93 @@
+<!—Registration form code-->
+    <html>
+
+    <head>
+        <title>PO Generator</title>
+        <style>
+            h3 {
+                text-align: center;
+            }
+
+            table {
+                color: white;
+                background-color: rgb(210, 30, 30);
+                border-collapse: collapse;
+                border: 2px solid black;
+            }
+
+            table.inner {
+                border: 1px
+            }
+        </style>
+    </head>
+
+    <body>
+        <h3>PO Number Generator</h3>
+        <form method="POST" , action="/generate">
+            <table align="center" cellpadding="6">
+                <tr>
+                    <td><label>Equipment ID:</label></td>
+                    <td><input type="text" name="equipment-id" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Order Date: </td>
+                    <td><input type="date" name="order-date" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Order Type: </label></td>
+                    <td>
+                        <select class="order-type" name="order-type-id">
+                            <option value="none">Select an Order Type</option>
+                            <option value="G">General</option>
+                            <option value="P">Parts</option>
+                            <option value="S">Supplies</option>
+                            <option value="T">Toner</option>
+                            <option value="E">Equipment</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Order Increment: </label></td>
+                    <td>
+                        <input type="number" name="order-increment-id" value="1" min="1" max="9">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Location:</label></td>
+                    <td>
+                        <select class="location" name="location-id">
+                            <option value="none">Select a Location</option>
+                            <option value="1">Hilton Head</option>
+                            <option value="2">Savannah</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Employee: </label></td>
+                    <td>
+                        <select class="employee" name="employee-id">
+                            <option value="none">Select an Employee</option>
+                            <option value="01">Alex</option>
+                            <option value="02">Joseph</option>
+                            <option value="03">Lizz</option>
+                            <option value="04">Mike</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Generate">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>PO Number: </label></td>
+                    <td><textarea name="po-number" placeholder="XXXXXXXX-XXXXXXXX">{{po_number}}</textarea></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+
+    </html>
