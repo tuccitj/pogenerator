@@ -11,14 +11,14 @@ POGenerator is a a basic flask app that submits a form and generates purchase or
 
     docker run --name pogenerator -d -p 8000:5000 --rm pogenerator:latest
 
-3.) Stopping the Container
+3.) Access application in any browser
+
+    localhost:8000 
+
+4.) Stopping the Container
 
     docker stop pogenerator
 
-4.) Removing the Container Image
+5.) Removing the Container Image
 
     docker image rm pogenerator
-
-5.) Access application in any browser
-
-    localhost:8000 
