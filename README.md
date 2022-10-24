@@ -18,3 +18,7 @@ POGenerator is a a basic flask app that submits a form and generates purchase or
 4.) Removing the Container Image
 
     docker image rm pogenerator
+
+5.) Access application in any browser
+
+    localhost:8000 
