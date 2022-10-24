@@ -7,7 +7,7 @@ POGenerator is a a basic flask app that submits a form and generates purchase or
     docker build -t pogenerator:latest .
 
 2.) Starting the Container
-    With an image already created, you can now run the container version of the application. This is done with the docker run command, which usually takes a large number of arguments. I'm going to start by showing you a basic example:
+    With an image already created, you can now run the container version of the application.
 
     docker run --name pogenerator -d -p 8000:5000 --rm pogenerator:latest
 
