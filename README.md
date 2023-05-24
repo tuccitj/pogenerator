@@ -1,5 +1,7 @@
 # pogenerator
-POGenerator is a a basic flask app that submits a form and generates purchase order numbers based on a custom schema I designed. Nothing crazy, it's simply a composite key. I wrote this so I could more effectively communicate to management why it was critical for us to be have a standarized PO numbering system to track all of our equipment and parts orders. Having a "smart" po number enabled all employees to derive critical information about an incoming shipment without having to waste precious time looking it up in two or three different systems. This streamlined communication between all employees and boosted productivity drastically. See PONumberSpecification.pdf for more details.
+POGenerator is a demo Flask application designed to facilitate form submission and generate purchase order numbers according to a customized schema. The purpose of developing this application was to effectively convey to management the significance of implementing a standardized purchase order numbering system for tracking equipment and parts orders. By incorporating a "smart" purchase order number, employees were empowered to extract crucial information regarding incoming shipments without the need to consult multiple systems, thus optimizing communication efficiency across the organization and significantly enhancing overall productivity.
+
+Check out PONumberSpecification.pdf for more details!
 
 ## Deployment and Removal Using Docker
 1.) Build Container Image
